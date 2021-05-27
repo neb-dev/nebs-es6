@@ -46,8 +46,27 @@ let obj5 = {
     "name": "Bailey",
     age,
     "greet"() {
-    console.log("Hello " + this.name, ", your age is: " + this.age);
+    	console.log("Hello " + this.name, ", your age is: " + this.age);
+    },
+    "greet me"() {
+    	console.log("Greetings");
     }
 };
 
-obj4["greet"]();
+obj5["greet"]();
+obj5["greet me"]();
+
+
+// use value as key name in obj
+let ageKey = "age";
+let obj6 = {
+	[ageKey]: 30,
+  greet() {
+  console.log("You are " + this.age + " years old.");
+  }
+}
+console.log(obj6);
+console.log(obj6["age"]); // 30
+console.log(obj6[ageKey]); // 30
+console.log(obj6.age);
+obj6.greet();
