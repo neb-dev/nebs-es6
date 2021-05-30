@@ -1,4 +1,4 @@
-// rest operator used as function parameters to pass arbitrary number of method args
+// rest operator to pass arbitrary number of method args
 let addUp = (...nums) => {
 	// rest operator creates an array of values
 	console.log(nums);
