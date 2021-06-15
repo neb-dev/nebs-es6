@@ -1,4 +1,5 @@
 // import and export example using stack blitz
+// modules are always in Strict Mode, no need to define "use strict"
 // regular imports can be renamed using the keyword "as"
 // default imports can be declared alongside regular imports
 import text, { keyValue as key, test } from './external.js';
