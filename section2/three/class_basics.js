@@ -13,3 +13,7 @@ let person = new Person(30);
 
 console.log(Person); // logs an object
 person.greet(); // Hello!
+console.log(person.__proto__); // {...}
+console.log(person.__proto__ == Object.prototype); // false
+console.log(person.__proto__ == Object); // false
+console.log(person.__proto__ == Person.prototype); // true
