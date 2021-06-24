@@ -29,3 +29,7 @@ class Josh extends Person {
 let josh = new Josh(30);
 // josh.greet(); // "Hi, I'm Josh and I'm 30 years old."
 josh.greetTwice(); // prints greet method twice
+
+console.log(josh.__proto__ === Person); // false
+console.log(josh.__proto__ === Person.prototype); // false
+console.log(josh.__proto__ === Josh.prototype); // true
