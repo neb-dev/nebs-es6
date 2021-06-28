@@ -5,7 +5,8 @@ let symbol2 = Symbol.for('age');
 console.log(symbol1 == symbol2); // true because unqiue ids match
 
 let person = {
-	name: 'Josh'
+	name: 'Josh',
+  age: 30
 }
 
 function makeAge(person) {
@@ -17,3 +18,5 @@ makeAge(person);
 
 console.log(person[symbol1]); // 27 symbol1, symbol2, ageSymbol all point to the same 'age' id
 console.log(person[symbol2]); // 27 symbol1, symbol2, ageSymbol all point to the same 'age' id
+
+console.log(person["age"]); // 30 ageSymbol does not effect the age object property as a symbol is simply a unique identifer stored in a hidden property
